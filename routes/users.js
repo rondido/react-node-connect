@@ -1,9 +1,9 @@
 var express = require('express');
-var router = express.Router();
+var app = express();
 
 /* GET users listing. */
-router.post('/', function(req, res, next) {
-  res.send({'message':'respond with a resource'});
+app.post('/', function(req, res, next) {
+  res.send({'message':'node get success'});
 });
 
-module.exports = router;
+module.exports = app;
